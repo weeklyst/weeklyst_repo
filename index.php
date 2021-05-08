@@ -3,24 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Weeklyst</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylemaster.css">
     <link rel="icon" href="img/icono.png">
     <script src="https://kit.fontawesome.com/eac556b4db.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="cabecera">
-      <div class="menu">
-        <div class="logoej">
-          <i class="fas fa-caret-down icon1">Menú</i>
+      <nav class="navigation">
+        <div class="menucont">
+          <ul class="menu">
+            <i class="fas fa-caret-down icon1"><a href"#">Menú</a><ul class="submenu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Contactenos</a></li>
+            </ul></i>
+          </ul>
         </div>
-
-        <!--<ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre nosotros</a></li>
-          <li><a href="#">Contactenos</a></li>
-        </ul>-->
-      </div>
-
+      </nav>
     </header>
 
     <div class="container">
