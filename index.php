@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Weeklyst</title>
-    <link rel="stylesheet" href="css/stylemaster.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icono.png">
     <script src="https://kit.fontawesome.com/eac556b4db.js" crossorigin="anonymous"></script>
   </head>
@@ -16,7 +16,10 @@
             <i class="fas fa-caret-down icon1"><a href"#">Menú</a><ul class="submenu">
               <li><a href="#">Inicio</a></li>
               <li><a href="#">Sobre nosotros</a></li>
-              <li><a href="#">Contactenos</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Contáctenos</a></li>
+              <li><a href="login.php">Iniciar Sesión</a></li>
+              <li><a href="registro.php">Registrarse</a></li>
             </ul></i>
           </ul>
         </div>
@@ -29,16 +32,16 @@
           <img src="img/logoweeklyst.png" class="logo">
         </div>
         <div class="botones">
-          <div class="box registro-usuario">
+          <a href="registro.php" class="btn"><div class="box registro-usuario">
             <i class="fas fa-user-clock icon"></i>
              <h4 class="title">Registrarse</h4>
              <p>Toma tu asistencia rapida y segura</p>
-          </div>
-          <div class="box inicio-usuario">
+          </div></a>
+          <a class="btn" href="login.php"><div class="box inicio-usuario">
             <i class="fas fa-user-circle icon"></i>
             <h4 class="title">Iniciar Sesión</h4>
             <p>Bienvenido de nuevo</p>
-          </div>
+          </div></a>
         </div>
 
         <div class="slider-image">
