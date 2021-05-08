@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/eac556b4db.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
     <header class="cabecera">
       <nav class="navigation">
         <div class="menucont">
@@ -24,20 +25,15 @@
 
     <div class="container">
       <div class="body-items">
-
-
         <div class="week-logo">
           <img src="img/logoweeklyst.png" class="logo">
         </div>
-
-
         <div class="botones">
           <div class="box registro-usuario">
             <i class="fas fa-user-clock icon"></i>
              <h4 class="title">Registrarse</h4>
              <p>Toma tu asistencia rapida y segura</p>
           </div>
-
           <div class="box inicio-usuario">
             <i class="fas fa-user-circle icon"></i>
             <h4 class="title">Iniciar Sesión</h4>
@@ -54,13 +50,11 @@
           Excepteur sint occaecat cupidatat non proident, sunt in culpa
           qui officia deserunt mollit anim id est laborum.</p>
         </div>
-
       </div>
 
       <hr>
 
       <div class="roles-content">
-
         <div class="institucion rol">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -92,8 +86,6 @@
         </div>
       </div>
     </div>
-
-
 
     <footer>
       ©Página creada por el equipo Weeklyst™ en sus instalaciones de manera remota
