@@ -14,12 +14,12 @@
         <div class="menucont">
           <ul class="menu">
             <i class="fas fa-caret-down icon1"><a href"#">Menú</a><ul class="submenu">
-              <li><a href="#">Inicio</a></li>
+              <li><a href="indesx.php">Inicio</a></li>
               <li><a href="#">Sobre nosotros</a></li>
               <li><a href="#">Servicios</a></li>
               <li><a href="#">Contáctenos</a></li>
-              <li><a href="login.php">Iniciar Sesión</a></li>
-              <li><a href="registro.php">Registrarse</a></li>
+              <li><a href="formularios/login.php">Iniciar Sesión</a></li>
+              <li><a href="formularios/registro.php">Registrarse</a></li>
             </ul></i>
           </ul>
         </div>
@@ -32,12 +32,12 @@
           <img src="img/logoweeklyst.png" class="logo">
         </div>
         <div class="botones">
-          <a href="registro.php" class="btn"><div class="box registro-usuario">
+          <a href="formularios/registro.php" class="btn"><div class="box registro-usuario">
             <i class="fas fa-user-clock icon"></i>
              <h4 class="title">Registrarse</h4>
              <p>Toma tu asistencia rapida y segura</p>
           </div></a>
-          <a class="btn" href="login.php"><div class="box inicio-usuario">
+          <a class="btn" href="formularios/login.php"><div class="box inicio-usuario">
             <i class="fas fa-user-circle icon"></i>
             <h4 class="title">Iniciar Sesión</h4>
             <p>Bienvenido de nuevo</p>
