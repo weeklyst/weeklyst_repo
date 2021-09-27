@@ -1,0 +1,97 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: #2e2e2e;
+  font-family: georgia,times,monospace;
+}
+
+/*Header*/
+
+.cabecera{
+  width: 100%;
+  height: 70px;
+  background: #222;
+  align-items: center;
+  display: flex;
+}
+
+/*Menú desplegable*/
+
+.navigation ul{
+  list-style: none;
+}
+
+.menucont{
+  display: inline-block;
+  position: relative;
+  left: 1130px;
+  background: #444;
+  width: 60px;
+  height: 17px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.icon1{
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.menucont > i{
+  position: relative;
+  display: inline-block;
+}
+
+.menucont>i>a{
+  display: block;
+  padding: 15px 20px;
+  color: #eee;
+  font-family: open-sans;
+  text-decoration: none;
+}
+
+.menucont:hover{
+  background: #333;
+  color: #558fff;
+  transition: all 0.3s;
+}
+
+.menucont i a:hover{
+  color: #558fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.submenu{
+  z-index: 3;
+  position: absolute;
+  top: 32px;
+  right: -45px;
+  background: #444;
+  border: 2px solid #333;
+  border-radius: 10px;;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.submenu li a{
+  display: block;
+  padding: 15px;
+  color: #eee;
+  font-family: open-sans;
+  text-decoration: none;
+}
+
+.menucont:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+}
+
+.submenu li:hover{
+  background: #333;
+}

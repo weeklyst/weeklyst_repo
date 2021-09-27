@@ -1,0 +1,67 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Web.WeekLyst.Areas.Identity.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item">
+
+            <div class="btn-group">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Programa" asp-action="Index">Programa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Ficha" asp-action="Index">Ficha</a>
+                        </li>
+                    </ul>
+                </div>
+                <span type="button" class="btn" style="background: #eae7e7; font-weight:bold;">
+                    <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"> @UserManager.GetUserName(User)</a>
+                </span>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" style="background: #eae7e7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="container">
+                        <button class="Switch active" id="Switch">
+                            <span><i class="fas fa-user-astronaut"></i></span>
+                            <span><i class="fas fa-moon"></i> </span>
+                        </button>
+                    </div>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <form id="logoutForm" class="dropdown-item" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                        <button id="logout" type="submit" class="nav-link btn btn-link text-dark">Cerrar sesión</button>
+                    </form>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item">
+
+        </li>
+    }
+    else
+    {
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Acceder</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="fas fa-book-reader">&nbsp;Entrar</i>
+                </a>
+
+
+                <a>
+                    <div class="dropdown-divider"></div>
+
+                </a>
+            </div>
+        </li>
+    }
+</ul>

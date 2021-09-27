@@ -1,0 +1,288 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #2e2e2e;
+  font-family: georgia,times,monospace;
+}
+
+/*Header*/
+
+.cabecera{
+  width: 100%;
+  height: 70px;
+  background: #222;
+  align-items: center;
+  display: flex;
+}
+
+/*Menú desplegable*/
+
+.navigation ul{
+  list-style: none;
+}
+
+.menucont{
+  display: inline-block;
+  position: relative;
+  left: 1130px;
+  background: #444;
+  width: 60px;
+  height: 17px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.icon1{
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.menucont > i{
+  position: relative;
+  display: inline-block;
+}
+
+.menucont>i>a{
+  display: block;
+  padding: 15px 20px;
+  color: #eee;
+  font-family: open-sans;
+  text-decoration: none;
+}
+
+.menucont:hover{
+  background: #333;
+  color: #558fff;
+  transition: all 0.3s;
+}
+
+.menucont i a:hover{
+  color: #558fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.submenu{
+  z-index: 3;
+  position: absolute;
+  top: 32px;
+  right: -45px;
+  background: #444;
+  border: 2px solid #333;
+  border-radius: 10px;;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.submenu li a{
+  display: block;
+  padding: 15px;
+  color: #eee;
+  font-family: open-sans;
+  text-decoration: none;
+}
+
+.menucont:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+}
+
+.submenu li:hover{
+  background: #333;
+}
+
+/*Logo*/
+
+.logo{
+  width: 400px;
+  margin-top: 80px;
+  margin-left: 155px;
+}
+
+/*Contenedor de botones*/
+
+.botones{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+/*botones*/
+
+.box{
+    width: 250px;
+    height: 120px;
+    padding: 20px;
+    margin: 20px;
+    background:#333;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    left: -40px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 300ms;
+    border-radius: 20px;
+}
+
+.box:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px 20px -10px #1312127c;
+}
+
+.box .icon,
+.box h4,
+.box p{
+   position: relative;
+   z-index: 1;
+   transition: all 300ms;
+}
+
+.box .icon{
+    font-size: 40px;
+    color: #558fff;
+    transform: translateY(30px);
+
+}
+
+.box:hover .icon{
+    color: #eee;
+    font-size: 30px;
+    transform: translateY(0);
+}
+
+.box h4,
+.box p{
+    margin-top: 10px;
+    color: #eee;
+}
+
+.box h4{
+    font-size: 30px;
+    transform: translateY(30px);
+    color: #eee
+
+}
+
+.box:hover h4{
+    transform: translateY(0);
+    color: #558fff;
+
+}
+
+.box p{
+    font-size: 14px;
+    transform: translateY(100px);
+    opacity: 0;
+    color: #eee
+}
+
+.box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+    color: #eee;
+}
+
+
+.box .background-hover{
+    width: 100px;
+    height: 100px;
+    background: #9d9deb;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, #0cfbdb, #1098aa23);
+}
+
+.box:hover .background-hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+}
+
+
+.slider-image{
+  width: 500px;
+  height: 300px;
+  background: #333;
+  color: #eee;
+  text-align: center;
+  display:flex;
+  border-radius: 15px;
+  padding: 10px;
+  position: absolute;
+  top: 180px;
+  right: 50px;
+}
+
+hr{
+  position: relative;
+  bottom: 20px;
+  border: 1px solid #222;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*Contenedor de roles*/
+
+.roles-content{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.rol{
+  background: #222;
+  color: #eee;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+/*Footer*/
+
+footer{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #333;
+  padding: 10px 0;
+  animation-name: colorchannge;
+  animation-duration: 1s;
+  -webkit-animation-name: colorchannge;
+  -webkit-animation-duration: 5s;
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@@keyframes colorchannge {
+  0% {background: #282829;}
+  25% {background: #3b3b3b;}
+  50% {background: #000000;}
+  75% {background: #065765;}
+  100% {background: #303030;}
+}
+
+@-webkit-keyframes colorchannge{
+  0% {background: #282829;}
+  25% {background: #3b3b3b;}
+  50% {background: #000000;}
+  75% {background: #065765;}
+  100% {background: #303030;}
+}

@@ -1,0 +1,374 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.cabecera{
+  width: 100%;
+  height: 70px;
+  background: #222;
+  align-items: center;
+  display: flex;
+}
+
+
+/*navigation ul{
+   list-style: none;
+ }
+
+.menucont{
+   display: inline-block;
+   position: relative;
+   left: 1130px;
+   background: #444;
+   width: 60px;
+   height: 17px;
+   padding: 15px;
+   border-radius: 10px;
+ }
+
+.menu{
+  padding: 15px;
+  position: relative;
+  left: 1150px;
+  background: #333;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.icon1{
+  color: #fff;
+}
+*/
+
+.navigation ul{
+  list-style: none;
+}
+
+.menucont{
+  display: inline-block;
+  position: relative;
+  left: 1130px;
+  background: #444;
+  width: 60px;
+  height: 17px;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.icon1{
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.menucont > i{
+  position: relative;
+  display: inline-block;
+}
+
+.menucont>i>a{
+  display: block;
+  color: #eee;
+  font-family: open-sans;
+  text-decoration: none;
+}
+
+.menucont:hover{
+  background: #333;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.menucont i a:hover{
+  color: #ffffff;
+  transition: all ease-in-out 0.3s;
+  text-decoration: none;
+}
+
+.submenu{
+  z-index: 3;
+  width: 190px;
+  /* text-align: center; */
+  position: absolute;
+  top: 32px;
+  right: -45px;
+  background: #444;
+  border: 2px solid #333;
+  border-radius: 10px;
+  align-items: left;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.contac{
+  font-family: open-sans;
+  font-weight: bolder;
+}
+
+.submenu li a{
+  display: block;
+  padding: 10px;
+  color: #eee;
+  font-family: open-sans;
+  text-decoration: none;
+}
+
+.menucont:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+}
+
+.submenu li:hover{
+  background: #333;
+  transition: all linear 0.2s;
+}
+
+.submenu i:hover{
+  color: #ffffff;
+  transition: all linear 0.2s;
+}
+
+/* Iconos menú */
+
+.ic1{
+  position: relative;
+  top: 10px;
+}
+
+.ic .txt{
+  margin-left: 3px;
+}
+
+
+.logo{
+  width: 400px;
+  margin-top: 80px;
+  margin-left: 155px;
+}
+
+
+.sob{
+  font-size: 50px;
+}
+.sobre{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.box{
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+}
+
+.video{
+  margin-left:-550px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  
+}
+
+.tarj{
+display: flexbox;
+position: relative;
+z-index: 1;
+margin-left: 100px;
+}
+
+.ic{
+  font-size: 40px;
+}
+
+.tit{
+  color: #73b9d4;
+}
+
+/*TARJETAS DE PRESENTACION*/
+
+.equi{
+  width: 500px;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  background: #333;
+  padding: 10px 0;
+  animation-name: colorchannge;
+  animation-duration: 1s;
+  -webkit-animation-name: colorchannge;
+  -webkit-animation-duration: 5s;
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes colorchannge {
+  0% {background: #282829;}
+  25% {background: #3b3b3b;}
+  50% {background: #000000;}
+  75% {background: #065765;}
+  100% {background: #303030;}
+}
+
+@-webkit-keyframes colorchannge{
+  0% {background: #282829;}
+  25% {background: #3b3b3b;}
+  50% {background: #000000;}
+  75% {background: #065765;}
+  100% {background: #303030;}
+}
+
+
+
+.jor{
+  width: 260px;
+}
+
+.jo{
+  width: 260px;
+  height: 270px;
+}
+
+.fra{
+  width: 260px;
+}
+
+.die{
+  width: 260px;
+}
+
+.container__card{
+  max-width: 1200px;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  width: 300px;
+  padding: 20px;
+  margin: 40px 50px;
+  font-family: 'Times New Roman', Times, serif;
+  transition: all 400ms cubic-bezier(0.5,0,0,1);
+  border-radius: 20px;
+}
+
+.card:hover{
+  box-shadow: 1px 1px 20px -10px #ffffff;
+}
+
+.card:hover .info__description{
+  margin-top: 0;
+  transition: all 400ms cubic-bezier(0.5,0,0,1);
+  border-radius: 0px 0px 20px 20px;
+}
+
+.card:hover .img{
+  margin-top: -50px;
+  transition: all 400ms cubic-bezier(0.5,0,0,1);
+  border-radius: 20px 20px 0px 0px;
+}
+
+
+
+.img{
+  background-color: #313030;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+}
+
+.info__description{
+
+  height: 220px;
+  color: #000000;
+  border-radius: 20px;
+  background: #3b3a3a;
+  padding: 20px;
+  margin-top: -300px;
+}
+
+.info__description p{
+  font-size: 14px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.info__description input{
+  margin-top: 20px;
+  padding: 10px 40px;
+  background: #a5e7fb;
+  color: #1b1b1b;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px -5px #1110105e;
+  transition: box-shadow 300ms;
+}
+
+.info__description input:hover{
+  box-shadow: 1px 1px 30px -5px #1110105e;
+}
+
+/*COLOR DE LAS CARTAS*/
+
+
+
+footer{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #333;
+  padding: 10px 0;
+  animation-name: colorchannge;
+  animation-duration: 1s;
+  -webkit-animation-name: colorchannge;
+  -webkit-animation-duration: 5s;
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes colorchannge {
+  0% {background: #282829;}
+  25% {background: #3b3b3b;}
+  50% {background: #000000;}
+  75% {background: #065765;}
+  100% {background: #303030;}
+}
+
+@-webkit-keyframes colorchannge{
+  0% {background: #282829;}
+  25% {background: #3b3b3b;}
+  50% {background: #000000;}
+  75% {background: #065765;}
+  100% {background: #303030;}
+}

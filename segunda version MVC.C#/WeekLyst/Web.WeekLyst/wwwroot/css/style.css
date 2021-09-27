@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #4b4a4a;
+  font-family: georgia,times,monospace;
+}
+
+/*Header*/
+
+.cabecera{
+  width: 100%;
+  height: 70px;
+  background:#222;
+  align-items: center;
+  display: flex;
+}
+
+
+/*Logo*/
+
+.logo{
+  width: 400px;
+  margin-top: 80px;
+  margin-left: 155px;
+}
+
+
+
+/*Contenedor de roles*/
+
+.roles-content{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.rol{
+  background: #222;
+  color: #eee;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+/*Footer*/
+
+footer{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #333;
+  padding: 10px 0;
+  animation-name: colorchannge;
+  animation-duration: 1s;
+  -webkit-animation-name: colorchannge;
+  -webkit-animation-duration: 5s;
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@keyframes colorchannge {
+  0% {background: #282829;}
+  25% {background: #3b3b3b;}
+  50% {background: #000000;}
+  75% {background: #065765;}
+  100% {background: #303030;}
+}
+
+@-webkit-keyframes colorchannge{
+  0% {background: #282829;}
+  25% {background: #3b3b3b;}
+  50% {background: #000000;}
+  75% {background: #065765;}
+  100% {background: #303030;}
+}
